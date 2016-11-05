@@ -1,89 +1,31 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASentry's Blog</title>
-<style>
-	div.mainNav{
-	height:500px;  
-	background-image: url(./image/home.jpg);
-    background-size:cover;  
-}   
-</style>
-<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body>
-<div class="mainNav">
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-inverse">
-        <div class="contianer">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only" style="color: gray">Toggle navigation</span> 菜单 <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-link" href="/index.html">ASentry</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-link" href="/index.html">首页</a>
-                    </li>
-                    <li>
-                        <a class="page-link" href="/about.html">关于我</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-	<div class="header">
-        <br /><br /><br /><br /><br /><br />
-        <h1 class="text-center" style="color:white"><span style="font-size: 170%">ASentry's Blog</span></h1>
-        <p class="lead text-center"><span style="color:white">欢迎访问ASentry的博客</span></p>
-    </div>
-</div>
-	<section style="background-color: #F0F0F0">
-	<div class="container">
-	    <div class="row">
-	        <div class="col-md-8">
-	           <h2>
-          			<a class="post-link" href="/2016/11/02/firstblog.html">创建博客</a><br />
-                <small>Nov,2,2016</small>
-        	  </h2>
-	            	 <p style="font-style: italic">“很多人闯进你的生活，只是为了给你上一课，然后转身离开。”以ASentry为名的Blog终于突破了层层困难开通了。 之前一些时候总有一些想法，去建立一个属于自己的博客。可总是遇到了一些不可预料的问题而搁置下来，而前几日php老师提出我们应建立属于自己的blog时，我便顺水推舟建立了这个略显简陋的blog。不过颇具成就感。</p> 
+---
+layout: main
+title: ASentry
+header-img: "image/home.jpg"
+permalink: /
+---
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+             <h2>
+                <a href="/2016/11/02//firstblog.html">创建博客</a><br />
+                 <small>{{ site.time | date_to_long_string }}</small>
+            </h2>
+             <a class="post-link" href="/2016/11/02/firstblog.html"><p style="font-style: italic">“很多人闯进你的生活，只是为了给你上一课，然后转身离开。”以ASentry为名的Blog终于突破了层层困难开通了。 之前一些时候总有一些想法，去建立一个属于自己的博客。可总是遇到了一些不可预料的问题而搁置下来，而前几日php老师提出我们应建立属于自己的blog时，我便顺水推舟建立了这个略显简陋的blog。不过颇具成就感。</p></a> 
                     <ul class="pager">
                       <li class="previous"><a href="/index.html">&laquo;上一页</a></li>
                       <li class="next"><a href="/page2.html">下一页&raquo;</a></li>
-                    </ul> 	
-	    	</div>
-	        <div class="col-md-4">
-	            <h3>关于我</h3>	
+                    </ul>   
+        </div>
+          <div class="col-md-4">
+              <h3>关于我</h3>  
               <label>大学生</label>&nbsp;&nbsp;
               <label>菜鸟</label>&nbsp;&nbsp;
               <label>C/C++</label>&nbsp;&nbsp;
               <label>PHP</label>&nbsp;&nbsp;
               <label>渗透测试</label>&nbsp;&nbsp;
 
-	    	</div>
-	</div>
-	</section>
-
- <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; ASentry 2016</span>
-                </div>
-            </div>
         </div>
-    </footer>
-<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
-</html>
+  </div>
+  </section>
