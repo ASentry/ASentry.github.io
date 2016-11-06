@@ -5,7 +5,7 @@ author: ASentry
 header-img: "image/firstblog.jpg"
 catalog: ture
 ---
->“很多人闯进你的生活，只是为了给你上一课，然后转身离开”
+>“很多人闯进你的生活，只是为了给你上一课，然后转身离开”     
 ## 前言 ##
 
 以ASentry为名的Blog终于突破了层层困难开通了。   
