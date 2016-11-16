@@ -1,34 +1,42 @@
 ---
-layout: main
-title: ASentry
-header-img: "image/home.jpg"
-permalink: /
+layout: page
+description: "欢迎访问ASentry的博客"
 ---
-<section>
-  <div class="container">
-      <div class="row">
-          <div class="col-md-8">
-          <div id="cblog">
-             <h2>
-                <a href="/2016/11/02/firstblog.html">创建博客</a><br />
-                 <small>{{ site.time | date_to_long_string }}</small>
-            </h2>
-             <a class="post-link" href="/2016/11/02/firstblog.html"><p style="font-style: italic">“很多人闯进你的生活，只是为了给你上一课，然后转身离开。”以ASentry为名的Blog终于突破了层层困难开通了。 之前一些时候总有一些想法，去建立一个属于自己的博客。可总是遇到了一些不可预料的问题而搁置下来，而前几日php老师提出我们应建立属于自己的blog时，我便顺水推舟建立了这个略显简陋的blog。不过颇具成就感。</p></a>
-             <hr style="height:1px;border:none;border-top:1px solid #BEBEBE;" /> 
-                    <ul class="pager">
-                      <li class="previous"><a href="/index.html">&laquo;上一页</a></li>
-                      <li class="next"><a href="/page2.html">下一页&raquo;</a></li>
-                    </ul>   
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:200 }}
         </div>
-        </div>
-        <div class="col-md-4 hidden-xs">
-        <div class="sidebar">
-        <h2>目录</h2>
-          <ul style="list-style-type:none">
-          <li class="previous"><a href="#cblog"><span style="font-size: 20px;">创建博客</span></a></li>
-          </ul>
-          </div>
-        </div>
-        </div>
-  </div>
-  </section>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 上一页</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页&rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
