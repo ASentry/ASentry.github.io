@@ -26,7 +26,7 @@ catalog: ture
 Git的GUI与很多，个人认为比较好用的是[TortoiseGit（乌龟Git）](https://tortoisegit.org/download/ "TortoiseGit（乌龟Git）")。不过github提供的桌面客户端也是极为好用，而且功能齐全、操作也相对简单。唯一缺点国内下载github客户端速度有些缓慢。 
 
 --- 
-### Ruby、Python、jekyll ###
+### Ruby、Python、jekyll    
 ---
 #### Ruby、Python     
 
@@ -58,7 +58,7 @@ Python[安装](https://www.python.org/downloads/ "安装")直接下一步即可�
 **ps:**配置好这一切你还可能遇到提示bundle等有关问题，所以你需要执行```bundle install```来解决这个问题。而后你可能会遇到类似于Error: jekyll-paginate的问题这些均可用```gem install jekyll-paginate```解决。 
 
 ---
-### 后记 ###
+### 后记    
 ---
 第一篇博客的完成无疑是激动，在编写过程中也听取一些同学遇到的问题将其加入其中。或许这篇博客不是最完整的jekyll+github建立博客的教程，但我想很多像我一样的小白能在本文中找到启发从而把复杂而模糊的安装的过程清晰化。也欢迎大家的指正与借鉴。
 
