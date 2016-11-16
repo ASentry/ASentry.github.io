@@ -21,7 +21,7 @@ catalog: ture
 关于配置环境的问题我在此介绍Git,Ruby,python,jekyll 
 
 
-### Git ###
+#### Git ####
 关于Git的安装及使用[廖雪峰的教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/ "廖雪峰的教程")中有详细简介我概不赘述。  
 Git的GUI与很多，个人认为比较好用的是[TortoiseGit（乌龟Git）](https://tortoisegit.org/download/ "TortoiseGit（乌龟Git）")。不过github提供的桌面客户端也是极为好用，而且功能齐全、操作也相对简单。唯一缺点国内下载github客户端速度有些缓慢。 
 
