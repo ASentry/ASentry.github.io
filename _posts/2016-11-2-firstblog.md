@@ -34,7 +34,7 @@ Ruby的安装基本上是傻瓜式安装，只需记住在安装时勾选上Add 
 使用命令```gem sources```查看gem源 
 在镜像源的使用上国内淘宝的镜像源已经不能够使用，而官方的镜像源不翻墙速度慢到极致。因而我们开始使用https://gem.ruby-china.org/这个镜像源。  
 使用命令更换gem源   
-```gem sourcrs -r https://rubygems.org/ ```
+```gem sourcrs -r https://rubygems.org/ ```    
 ```gem sources -a https://gem.ruby-china.org/```    
 更换完成后查看显示如下结果   
 ![](http://i.imgur.com/Ti39cxr.jpg)    
